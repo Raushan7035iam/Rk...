@@ -1,0 +1,284 @@
+Question 1.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter a no:");
+	scanf("%d",&n);
+	if(n>=0)
+	{
+		printf("Positive");
+	}
+	else
+	printf("Negative");
+}
+
+Question 2.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("enter a no:");
+	scanf("%d",&n);
+	if(n%5)
+	printf("no");
+	else
+	printf("yes");
+}
+
+Question 3.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter a no:");
+	scanf("%d",&n);
+	if(n%2)
+	printf("odd");
+	else
+	printf("even");
+}
+Question 4.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter a no:");
+	scanf("%d",&n);
+	if(n&1)
+	printf("%d is odd ",n);
+	else
+	printf("%d is even",n);
+	return 0;
+}
+
+Question 5.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter a no:");
+	scanf("%d",&n);
+	if((n>99)&&(n<1000))
+	printf("Given no is a 3 digit no");
+	else
+	printf("Not a 3 digit no");
+}
+
+Question 6.
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("Enter a  and b no:");
+	scanf("%d%d",&a,&b);
+	if(a>b)
+	printf("a is greater");
+	else if(a==b)
+	printf("both are the same");
+	else
+	printf("b is greater");
+}
+
+Question 7.
+#include<stdio.h>
+int main()
+{
+	int d,b,a,c;
+	printf("Enter the value of a,b,c");
+	scanf("%d%d%d",&a,&b,&c);
+	d=(b*b)-(4*a*c);
+	if(d>0)
+	printf("Roots are real and distinct");
+	else if(d==0)
+	printf("Roots are same");
+	else
+	printf("Roots are imaginary");
+}
+
+Question 9.
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("Enter the value of a,b,c");
+	scanf("%d%d%d",&a,&b,&c);
+	if((a>b)&&(b>c))
+	printf("a is greater");
+	else if((b>c)&&(c>a))
+	printf("b is greater");
+	else
+	printf("c is greater");
+}
+
+Question 10.
+#include<stdio.h>
+int main()
+{
+	float cost,selling,profit,loss,loss_per;	
+	float profit_per;
+	printf("Enter cost and selling :");
+	scanf("%f%f",&cost,&selling);
+	profit=selling-cost;
+	loss=cost-selling;
+	loss_per=(loss*100)/cost;
+	profit_per=(profit*100)/cost;
+	printf("profit percentage is %f\n",profit_per);
+	printf("loss percentage is %f",loss_per);
+	
+}
+
+Question 11.
+#include<stdio.h>
+int main()
+{
+	int phy,math,che,eng,hindi;
+	printf("Enter the marks(under 100) of all subject:");
+	scanf("%d%d%d%d%d",&phy,&math,&che,&eng,&hindi);
+	if(phy>33)
+	{
+		printf("Examination passed:\n");
+	}
+	else 
+	{
+		printf("Failed\n");
+	}
+    if(math>33)
+	{
+		printf("Examination passed:\n");
+	}
+	else 
+	{
+			printf("Failed\n");
+	}
+
+    if(che>33)
+	printf("Examination passed:\n");
+	else 
+	printf("Failed\n");
+    if(eng>33)
+	printf("Examination passed:\n");
+	else 
+	printf("Failed\n");
+    if(hindi>33)
+	printf("Examination passed:\n");
+	else 
+	printf("Failed");
+}
+
+Question 12.
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf("Enter any alphabet:");
+	scanf("%c",&ch);
+	if(ch>='A'&&ch<='Z')
+	{
+		printf("Upper case letter\n");
+	}
+	if((ch>='a')&&(ch<='z'))
+	{
+		printf("Lower case letter");
+	}
+	
+}
+
+Question 13.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter a no:");
+	scanf("%d",&n);
+	if((n%3)==0&&(n%2)==0)
+    printf("no is divisible by 3 and 2");
+    else 
+    printf("not divisible");
+}
+
+Question 14.
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter a no:");
+	scanf("%d",&n);
+	if((n%7)==0||(n%3)==0)
+    printf("no is divisible by 7 or 3");
+    else 
+    printf("not divisible");
+}
+
+Question 15.
+#include<stdio.h>
+int main()
+{
+	int num;
+	printf("Enter a no:");
+	scanf("%d",&num);
+	if(num>0)
+	printf("positive");
+	else if(num==0)
+	printf("zero");
+	else
+	printf("negative");
+}
+
+
+Question 16.
+#include<stdio.h>
+int main()
+{
+	char ch;
+	printf("Enter any alphabet:");
+	scanf("%c",&ch);
+	if(ch>='A'&&ch<='Z')
+	{
+		printf("Upper case letter\n");
+	}
+	else if((ch>='a')&&(ch<='z'))
+	{
+		printf("Lower case letter\n");
+	}
+	else if((ch>='0')&&(ch<='9'))
+	{
+		printf("Digit no\n");
+		
+	}
+	else
+	printf("Special character");
+	
+}
+
+Question 17.
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("Enter length of side(3):");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a+b>=c&&b+c>=a&&a+c>=b)
+	printf("Triangle valid");
+	else
+	printf("Triangle not valid");
+}
+
+Question 18.
+#include<stdio.h>
+int main()
+{
+	int month_num;
+	printf("Enter month_no :");
+	scanf("%d",&month_num);
+	if(month_num==1||month_num==3||month_num==5||month_num==7||month_num==8||month_num==10||month_num==12)
+	printf("31 days");
+	else if(month_num==4||month_num==6||month_num==9||month_num==11)
+	printf("30 days");
+	else
+	printf("28 or 29 days");
+}
+
+
+
+
